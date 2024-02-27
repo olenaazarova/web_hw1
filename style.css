@@ -1,7 +1,18 @@
 body {
     font-family: 'Lexend', sans-serif;
     display: block;
+    overflow-x: hidden;
 }
+body h5 {
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #1B1C57;
+    
+    }
 .header{
     display: flex;
     justify-content: space-between;
@@ -809,22 +820,17 @@ body {
 .review {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: absolute;
     top: 2201px;
-    
-    /* left:-398px; */
-    /* left: 0px; */
+
 }
 
 .review-header {
-    /* position: relative;
-    top:0px;
-    left: 0px; */
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 8%;
     transform: translate(-50%, -50%);
     text-align: center;
     flex: 1;
@@ -861,8 +867,10 @@ body {
 
 .review-houses-info img {
     position: relative;
+    top: -60px;
     border-radius: 8px;
     opacity: 0.7;
+    
 }
 
 .review-houses-info-rect h3{
@@ -889,26 +897,212 @@ color: #626687;
 }
 .review-houses-info-rect {
     position: absolute;
+    margin: 30px;
     background-color: #FFFFFF;
     white-space: nowrap;
     width: 612px;
-    height:249px;
-    top: 334px;
+    height:217px;
+    top: 274px;
     
     padding: 32px;
     border-radius: 16px;
     gap: 24px;
-    
+    box-shadow: 0px 9px 32px 0px #595CDB0D;
+}
+.review-houses-info-user h5{
+    position: absolute;
+    top: 167px;
+    left: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0E1735;
+
+}
+
+.review-houses-info-user span{
+    position: absolute;
+    top: 217px;
+    left: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #888B97;
+
+}
+
+.review-houses-info-user img{
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 192px;
+    left: 36px;
+}
+
+.review-houses-info-rating h3{
+    position: absolute;
+    top: 198px;
+    left: 565px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #3C4563;
+
+}
+
+.review-houses-info-rating svg{
+    position: absolute;
+    top: 220px;
+    left: 516px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #3C4563;
+
+}
+.review-pagination {
+    /* z-index: 2; */
+    position: relative;
+    top: 60px;
+    left: 0px;
+
 }
 .tips{
     position: absolute;
-    top: 4000px;
+    /* top: 2985px; */
+    top: 3100px;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around;
+    align-items: center; */
+}
+.tips-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.tips-header-title {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.tips-header-title p {
+/* position: absolute; */
+
+text-align: center;
+font-size: 14px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: center;
+color: #F59E0B;
+/* margin: 0 auto; */
+
+}
+
+.tips-header h2 {
+/* position: absolute;
+top: 50px;
+left: */
+font-size: 32px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: 0px;
+text-align: center;
+color: #1B1C57;
+
+}
+.tips-header button {
+    width: 118px;
+    height: 46px;
+/* top: 3128px
+left: 661px */
+    padding: 12px 16px 12px 16px;
+    border-radius: 32px;
+    gap: 16px;
+    background-color: #10B981;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.tips-article{
+    position: absolute;
+    top: 270px;
+    left: -75%;
+
+
+}
+.tips-article-house {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tips-article-house img{
+ border-radius: 16px;
+ width: 200px;
+ height: 144px;
+ margin-bottom: 56px;
+}
+.tips-article-house-shortinfo {
+    position: relative;
+    left: 20px;
+    margin-bottom: 0px;
+}
+.tips-article-house-shortinfo span {
+    position: relative;
+    top: -66px;
+    left: 0px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #3C4563;
+
+}
+.tips-article-house-shortinfo h5{
+    position: relative;
+    top: -76px;
+    left: 0px;
+}
+.tips-article-house-shortinfo img {
+    
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+
+}
+
+.tips-article-house-timetoread {
+    position: relative;
+    top: -100px;
+    left: 0px;
+}
+.tips-rightarticle {
+    position: absolute;
+    top: 270px;
+    left: 75%;
+}
 .subscribe {
     position: absolute;
     top: 5000px;
 
+    
 }
 
 .footer{
