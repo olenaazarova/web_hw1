@@ -16,7 +16,7 @@ body h5 {
 .header{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+
 }
 
 .header-left {
@@ -886,13 +886,13 @@ body h5 {
 }
 .review-houses-info-rect p {
 
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: left;
-opacity: 0.75;
-color: #626687;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 0.75;
+    color: #626687;
 
 }
 .review-houses-info-rect {
@@ -969,7 +969,6 @@ color: #626687;
 
 }
 .review-pagination {
-    /* z-index: 2; */
     position: relative;
     top: 60px;
     left: 0px;
@@ -977,13 +976,11 @@ color: #626687;
 }
 .tips{
     position: absolute;
-    /* top: 2985px; */
     top: 3100px;
     left: 40%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around;
-    align-items: center; */
+  
 }
 .tips-header {
     display: flex;
@@ -994,41 +991,36 @@ color: #626687;
 
 .tips-header-title {
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .tips-header-title p {
-/* position: absolute; */
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #F59E0B;
 
-text-align: center;
-font-size: 14px;
-font-weight: 500;
-line-height: 18px;
-letter-spacing: 0px;
-text-align: center;
-color: #F59E0B;
-/* margin: 0 auto; */
 
 }
 
 .tips-header h2 {
-/* position: absolute;
-top: 50px;
-left: */
-font-size: 32px;
-font-weight: 600;
-line-height: 40px;
-letter-spacing: 0px;
-text-align: center;
-color: #1B1C57;
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #1B1C57;
 
 }
 .tips-header button {
     width: 118px;
     height: 46px;
-/* top: 3128px
-left: 661px */
+
     padding: 12px 16px 12px 16px;
     border-radius: 32px;
     gap: 16px;
@@ -1052,10 +1044,10 @@ left: 661px */
     justify-content: space-between;
 }
 .tips-article-house img{
- border-radius: 16px;
- width: 200px;
- height: 144px;
- margin-bottom: 56px;
+    border-radius: 16px;
+    width: 200px;
+    height: 144px;
+    margin-bottom: 56px;
 }
 .tips-article-house-shortinfo {
     position: relative;
@@ -1124,37 +1116,144 @@ left: 661px */
 }
 
 .tips-rightarticle-info-preview h3{
-position: relative;
-top: -24px;
-font-size: 24px;
-font-weight: 500;
-line-height: 32px;
-letter-spacing: 0px;
-text-align: left;
-color: #1B1C57;
+    position: relative;
+    top: -24px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #1B1C57;
 
 }
 .tips-rightarticle-info-preview p {
-position: relative;
-top: -20px;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: left;
-opacity: 0.75;
-color: #626687;
+    position: relative;
+    top: -20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 0.75;
+    color: #626687;
 
 
 }
 .subscribe {
     position: absolute;
-    top: 5000px;
+    top: 4158px;
+    left: 120px;
+}
 
+.subscribe-background :first-child{
+    position: absolute;
+    top: 10px;
+    left: 280px;
+    height: 312px;
+    width : 1200px;
+    border-radius: 32px;
+    z-index: -1;
+}
+.subscribe h2 {
+    position: absolute;
+    top: 40px;
+    left: 695px;
+    white-space: nowrap;
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #1B1C57;
+
+}
+
+.subscribe input[type="email"] {
+    flex: 1;
+    border: none; 
+    outline: none;
+    /* padding: 0;  */
+    font-size: 14px; 
+    line-height: 22px;
+    font-weight: 500;
+    font-family:  'Lexend', sans-serif;
+    color: #888B97;
+    position: absolute;
+    top: 200px;
+    left: 635px;
+
+    width: 496px;
+    height: 54px;
+
+    padding: 4px 4px 4px 64px;
+    border-radius: 32px;
+    gap: 16px;
+
+
+}
+.subscribe svg {
+    position: absolute;
+    top: 221px;
+    left: 655px;
+    z-index: 2;
+}
+.subscribe button {
+    position: absolute;
+    top: 208px;
+    left: 1065px;
+    z-index: 2;
+    border-radius: 32px;
+    background-color: #10B981;
+    width: 129px;
+    height: 46px;
+    padding: 12px 16px 12px 16px;
+
+    gap: 4px;
+    color: #FFFFFF;
+    border: none;
     
 }
 
+
 .footer{
     position: absolute;
-    top: 6000px;
+    top: 4690px;
+    left: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-bio p{
+    margin-right: 400px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #626687;
+
+}
+
+.footer-contactinfo-property {
+    position: relative;
+    top: -36px;
+    left: 0px;
+    margin-right: 100px;
+}
+
+.footer-contactinfo-article {
+    position: relative;
+    top: -36px;
+    left: 0px;
+    margin-right: 100px;
+}
+.footer-contactinfo-contact {
+    position: relative;
+    top: -36px;
+    left: 0px;
+    margin-right: 100px;
+}
+.footer-contactinfo-property-links a {
+    margin-bottom: 10px;
 }
